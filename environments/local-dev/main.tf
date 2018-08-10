@@ -8,4 +8,5 @@ module "azure_service_bus" {
     source = "../../modules/azure_service_bus"
     suffix = "${var.suffix}"
     location = "${var.location}"
+    resource_group_name = "${module.azure_resource_group.resource_group}"
 }
